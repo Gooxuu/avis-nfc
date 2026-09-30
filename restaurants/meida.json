@@ -1,0 +1,25 @@
+{
+  "slug": "meida",
+  "nom": "Meïda",
+  "signature": "Brasserie méditerranéenne",
+  "adresse": "10 place de la République, 93400 Saint-Ouen-sur-Seine",
+  "horaires": "Tous les jours, 12h-14h30 et 19h-23h45",
+  "googlePlaceId": "ChIJcxb0ry9v5kcRDLYmXvIAT-E",
+  "whatsapp": null,
+  "liens": [
+    { "texte": "Réserver une table", "url": "https://bookings.zenchef.com/results?rid=366439" },
+    { "texte": "Voir la carte", "url": "https://www.meida.fr/menus-carte/" },
+    { "texte": "Instagram", "url": "https://www.instagram.com/meida.so/" }
+  ],
+  "theme": {
+    "fond": "#fbf7f2",
+    "texte": "#1a1a1a",
+    "principal": "#b86139",
+    "secondaire": "#b86139",
+    "police": "oswald"
+  },
+  "images": {
+    "bandeau": "logo.png"
+  },
+  "goatcounter": null
+}
