@@ -45,12 +45,18 @@ test('le slug doit correspondre au nom du fichier de la fiche', () => {
   assert.throws(() => construire(options), /chez-marcel\.json[\s\S]*slug/);
 });
 
-test('une fiche sans WhatsApp est construite avec un avertissement', () => {
+test('une fiche sans WhatsApp ni e-mail est construite avec un avertissement', () => {
   const { options } = projet({ 'chez-marcel': { ...ficheValide(), whatsapp: null } });
   const { pages, avertissements } = construire(options);
   assert.deepEqual(pages, ['chez-marcel']);
   assert.equal(avertissements.length, 1);
   assert.match(avertissements[0], /chez-marcel[\s\S]*WhatsApp/);
+});
+
+test("une fiche sans WhatsApp mais avec un e-mail n'a pas d'avertissement", () => {
+  const fiche = { ...ficheValide(), whatsapp: null, email: 'contact@chez-marcel.fr' };
+  const { avertissements } = construire(projet({ 'chez-marcel': fiche }).options);
+  assert.deepEqual(avertissements, []);
 });
 
 test("une page d'un restaurant retiré ne reste pas dans le site", () => {

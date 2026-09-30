@@ -21,7 +21,8 @@ est interdit par Google et risqué en droit français.
 | `googlePlaceId` | oui | Identifiant de la fiche Google (`ChIJ…`) |
 | `theme.fond`, `theme.texte`, `theme.principal`, `theme.secondaire` | oui | Couleurs `#rrggbb` |
 | `theme.police` | non | Nom d'un fichier de `modele/polices/` sans `.woff2` |
-| `whatsapp` | non | Numéro du patron ; `null` en démo (WhatsApp laisse choisir le contact) |
+| `whatsapp` | non | Numéro du patron : prioritaire pour le bouton « Écrire au restaurant » |
+| `email` | non | Adresse du restaurant : utilisée par ce bouton sans WhatsApp, sinon en lien « Ou par e-mail ». Sans les deux (démo), WhatsApp laisse choisir le contact |
 | `signature`, `horaires`, `liens`, `images` | non | |
 | `goatcounter` | non | Code du compte GoatCounter pour compter les passages ; `null` = aucun script |
 

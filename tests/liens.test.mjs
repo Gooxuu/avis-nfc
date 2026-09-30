@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { googleReviewUrl, whatsappUrl } from '../lib/liens.mjs';
+import { googleReviewUrl, whatsappUrl, emailUrl } from '../lib/liens.mjs';
 
 test("le lien Google ouvre la fenêtre d'avis de la fiche", () => {
   assert.equal(
@@ -34,6 +34,13 @@ test('le message prérempli est encodé pour ne pas casser le lien', () => {
   assert.equal(
     whatsappUrl('0612345678', 'Café & dessert ?'),
     'https://wa.me/33612345678?text=Caf%C3%A9%20%26%20dessert%20%3F',
+  );
+});
+
+test("le lien e-mail ouvre un message vers le restaurant avec objet et texte encodés", () => {
+  assert.equal(
+    emailUrl('contact@chez-marcel.fr', 'Retour sur ma visite', 'Café & dessert ?'),
+    'mailto:contact@chez-marcel.fr?subject=Retour%20sur%20ma%20visite&body=Caf%C3%A9%20%26%20dessert%20%3F',
   );
 });
 

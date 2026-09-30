@@ -6,6 +6,7 @@
   "horaires": "De midi à 23h tous les jours, service continu",
   "googlePlaceId": "ChIJY7SUOdZv5kcRPVDKh7EP-uA",
   "whatsapp": null,
+  "email": "contact@lebouillonducoq.com",
   "liens": [
     { "texte": "Voir le menu", "url": "https://lebouillonducoq.com/menu/" },
     { "texte": "Instagram", "url": "https://www.instagram.com/lebouillonducoq/" }

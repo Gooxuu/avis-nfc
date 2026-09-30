@@ -44,6 +44,16 @@ test('un lien qui ne commence pas par http(s) est refusé', () => {
   assert.throws(() => validerFiche(fiche), /liens\[1\]\.url/);
 });
 
+test('une adresse e-mail valide est acceptée', () => {
+  assert.doesNotThrow(() => validerFiche({ ...ficheValide(), email: 'contact@chez-marcel.fr' }));
+});
+
+test('une adresse e-mail mal formée ou qui ajoute des paramètres au lien est refusée', () => {
+  for (const email of ['contact@', 'contact chez@marcel.fr', 'contact@marcel.fr?cc=pirate@x.fr']) {
+    assert.throws(() => validerFiche({ ...ficheValide(), email }), /email/, email);
+  }
+});
+
 test('un code GoatCounter avec des caractères interdits est refusé', () => {
   assert.throws(
     () => validerFiche({ ...ficheValide(), goatcounter: 'mon.site/../x' }),

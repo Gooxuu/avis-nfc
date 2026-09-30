@@ -158,6 +158,11 @@ body {
   opacity: 0.85;
 }
 
+.note a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
 .liens {
   display: flex;
   flex-wrap: wrap;

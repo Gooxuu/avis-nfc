@@ -23,6 +23,22 @@ test('le bouton privé ouvre WhatsApp vers le numéro du restaurant avec un mess
   assert.match(url.searchParams.get('text'), /Chez Marcel/);
 });
 
+test("sans WhatsApp mais avec un e-mail, le bouton privé écrit un e-mail au restaurant", () => {
+  const liens = hrefs(rendrePage({ ...ficheValide(), whatsapp: null, email: 'contact@chez-marcel.fr' }));
+  assert.equal(liens.filter((h) => h.startsWith('https://wa.me/')).length, 0);
+  const mail = liens.find((h) => h.startsWith('mailto:'));
+  assert.ok(mail, 'lien e-mail absent');
+  const url = new URL(mail);
+  assert.equal(url.pathname, 'contact@chez-marcel.fr');
+  assert.match(url.searchParams.get('body'), /Chez Marcel/);
+});
+
+test("avec WhatsApp et e-mail, les deux moyens de contact sont proposés", () => {
+  const liens = hrefs(rendrePage({ ...ficheValide(), email: 'contact@chez-marcel.fr' }));
+  assert.ok(liens.some((h) => h.startsWith('https://wa.me/33612345678')));
+  assert.ok(liens.some((h) => h.startsWith('mailto:contact@chez-marcel.fr')));
+});
+
 test("sans numéro, la page ne prétend pas que le message arrive au restaurant", () => {
   const avec = rendrePage(ficheValide());
   const sans = rendrePage({ ...ficheValide(), whatsapp: null });

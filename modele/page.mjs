@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs';
-import { googleReviewUrl, whatsappUrl } from '../lib/liens.mjs';
+import { googleReviewUrl, whatsappUrl, emailUrl } from '../lib/liens.mjs';
 
 const STYLE = readFileSync(new URL('./style.css', import.meta.url), 'utf8');
 
@@ -7,6 +7,8 @@ const ICONE_ETOILE =
   '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg>';
 const ICONE_MESSAGE =
   '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></svg>';
+const ICONE_ENVELOPPE =
+  '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 6h18v12H3zM3 6l9 7 9-7"/></svg>';
 
 function echapper(texte) {
   return String(texte)
@@ -38,6 +40,28 @@ function police(fiche) {
 `;
 }
 
+// WhatsApp du patron en priorité (e-mail en lien secondaire), sinon l'e-mail du restaurant,
+// sinon (démo) WhatsApp sans destinataire.
+function contactPrive(fiche, message) {
+  const mail = fiche.email ? emailUrl(fiche.email, 'Retour sur ma visite', message) : null;
+  if (fiche.whatsapp) {
+    const ouMail = mail ? ` <a href="${echapper(mail)}">Ou par e-mail</a>` : '';
+    return {
+      href: whatsappUrl(fiche.whatsapp, message),
+      icone: ICONE_MESSAGE,
+      note: `\n      <p class="note">Votre message arrive directement sur le WhatsApp du restaurant.${ouMail}</p>`,
+    };
+  }
+  if (mail) {
+    return {
+      href: mail,
+      icone: ICONE_ENVELOPPE,
+      note: '\n      <p class="note">Votre message arrive directement dans la boîte e-mail du restaurant.</p>',
+    };
+  }
+  return { href: whatsappUrl(null, message), icone: ICONE_MESSAGE, note: '' };
+}
+
 function compteur(fiche) {
   if (!fiche.goatcounter) return '';
   return `\n  <script data-goatcounter="https://${fiche.goatcounter}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>`;
@@ -54,9 +78,7 @@ export function rendrePage(fiche) {
   const ornement = images.ornement
     ? `<img class="ornement" src="${echapper(images.ornement)}" alt="">`
     : '<hr class="separateur">';
-  const note = fiche.whatsapp
-    ? '\n      <p class="note">Votre message arrive directement sur le WhatsApp du restaurant.</p>'
-    : '';
+  const contact = contactPrive(fiche, message);
   const liens = (fiche.liens ?? [])
     .map((lien) => `<a href="${echapper(lien.url)}" rel="noopener">${echapper(lien.texte)}</a>`)
     .join('\n      ');
@@ -96,7 +118,7 @@ ${STYLE}  </style>${compteur(fiche)}
 
     <section class="bloc" aria-labelledby="question">
       <p class="question" id="question">Une remarque, un souci&nbsp;? L’équipe est à votre écoute.</p>
-      <a class="bouton bouton-prive" href="${echapper(whatsappUrl(fiche.whatsapp, message))}" data-goatcounter-click="message-prive">${ICONE_MESSAGE}<span>Écrire au restaurant</span></a>${note}
+      <a class="bouton bouton-prive" href="${echapper(contact.href)}" data-goatcounter-click="message-prive">${contact.icone}<span>Écrire au restaurant</span></a>${contact.note}
     </section>${menuLiens}
 
     <footer class="pied">
