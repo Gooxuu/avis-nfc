@@ -1,0 +1,13 @@
+{
+  "name": "avis-nfc",
+  "private": true,
+  "type": "module",
+  "description": "Pages d'avis ouvertes par les cartes NFC : une page par restaurant, générée depuis sa fiche.",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

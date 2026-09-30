@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light;
+  /* Versions assombries des couleurs de la fiche, pour que texte et boutons restent lisibles. */
+  --principal-fonce: var(--principal);
+  --principal-fonce: color-mix(in srgb, var(--principal) 80%, black);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--police-marque), Georgia, 'Times New Roman', serif;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: max(1rem, env(safe-area-inset-top)) 1.25rem max(1.5rem, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.bandeau {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 0.25rem;
+}
+
+.titre {
+  margin: 1.5rem 0 0.25rem;
+  font-size: 2.25rem;
+  font-weight: normal;
+  line-height: 1.1;
+  color: var(--principal-fonce);
+}
+
+.signature {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--principal-fonce);
+}
+
+.visuellement-cache {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.bloc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.merci {
+  margin: 1.25rem 0 0.35rem;
+  font-size: 2rem;
+  line-height: 1.15;
+  color: var(--principal-fonce);
+}
+
+.invite,
+.question {
+  margin: 0 0 1.1rem;
+  font-size: 1.15rem;
+  max-width: 24rem;
+}
+
+.question {
+  margin-bottom: 0.75rem;
+}
+
+.bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  min-height: 3.6rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: transform 0.12s ease, filter 0.12s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bouton svg {
+  flex: none;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.bouton:active {
+  transform: scale(0.98);
+}
+
+.bouton:focus-visible,
+.liens a:focus-visible {
+  outline: 3px solid var(--texte);
+  outline-offset: 3px;
+}
+
+.bouton-google {
+  background: var(--principal-fonce);
+  color: #fff;
+  box-shadow: 0 2px 0 color-mix(in srgb, var(--principal) 55%, black);
+}
+
+.bouton-prive {
+  background: transparent;
+  color: var(--texte);
+  border: 2px solid var(--secondaire);
+}
+
+.ornement {
+  display: block;
+  width: 65%;
+  max-width: 16rem;
+  height: auto;
+  margin: 1.75rem auto 1.25rem;
+}
+
+.separateur {
+  width: 4rem;
+  margin: 2rem auto 1.5rem;
+  border: 0;
+  border-top: 2px solid var(--secondaire);
+}
+
+.note {
+  margin: 0.6rem 0 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.liens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  margin: 2rem 0 0;
+  font-size: 1.15rem;
+}
+
+.liens a {
+  color: var(--texte);
+  text-underline-offset: 0.2em;
+  padding: 0.35rem 0.25rem;
+}
+
+.pied {
+  margin-top: 1.75rem;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.pied address {
+  font-style: normal;
+}
+
+.pied p {
+  margin: 0.2rem 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bouton {
+    transition: none;
+  }
+}

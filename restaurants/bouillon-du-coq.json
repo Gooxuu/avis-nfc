@@ -1,0 +1,26 @@
+{
+  "slug": "bouillon-du-coq",
+  "nom": "Le Bouillon du Coq",
+  "signature": "par Thierry Marx",
+  "adresse": "37 boulevard Jean Jaurès, 93400 Saint-Ouen-sur-Seine",
+  "horaires": "De midi à 23h tous les jours, service continu",
+  "googlePlaceId": "ChIJY7SUOdZv5kcRPVDKh7EP-uA",
+  "whatsapp": null,
+  "liens": [
+    { "texte": "Voir le menu", "url": "https://lebouillonducoq.com/menu/" },
+    { "texte": "Instagram", "url": "https://www.instagram.com/lebouillonducoq/" }
+  ],
+  "theme": {
+    "fond": "#bacfad",
+    "texte": "#303133",
+    "principal": "#a06935",
+    "secondaire": "#47877f",
+    "police": "im-fell-english-sc"
+  },
+  "images": {
+    "bandeau": "bandeau.png",
+    "ornement": "ornement.png",
+    "icone": "logo.svg"
+  },
+  "goatcounter": null
+}
