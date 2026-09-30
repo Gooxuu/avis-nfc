@@ -88,7 +88,7 @@ ${STYLE}  </style>${compteur(fiche)}
 
     <section class="bloc" aria-labelledby="merci">
       <p class="merci" id="merci">Merci de votre visite&nbsp;!</p>
-      <p class="invite">Un mot sur votre repas&nbsp;? Votre avis aide d’autres gourmands à nous découvrir.</p>
+      <p class="invite">Un mot sur votre repas&nbsp;? Votre avis aide d’autres convives à nous découvrir.</p>
       <a class="bouton bouton-google" href="${echapper(googleReviewUrl(fiche.googlePlaceId))}" data-goatcounter-click="avis-google">${ICONE_ETOILE}<span>Laisser un avis sur Google</span></a>
     </section>
 
