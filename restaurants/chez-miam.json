@@ -1,0 +1,26 @@
+{
+  "slug": "chez-miam",
+  "nom": "Chez Miam",
+  "signature": "Burgers gourmets et frites maison",
+  "adresse": "63 avenue Gabriel Péri, 93400 Saint-Ouen-sur-Seine",
+  "googlePlaceId": "ChIJ7QCK5Q9v5kcRBIvDEEzjNBQ",
+  "whatsapp": null,
+  "liens": [
+    {
+      "texte": "Commander en ligne",
+      "url": "https://www.chezmiam.fr/"
+    },
+    {
+      "texte": "Instagram",
+      "url": "https://www.instagram.com/chez_miam/"
+    }
+  ],
+  "theme": {
+    "fond": "#f6f1e7",
+    "texte": "#1f2a36",
+    "principal": "#33485d",
+    "secondaire": "#c9b48f",
+    "police": "poppins"
+  },
+  "goatcounter": null
+}

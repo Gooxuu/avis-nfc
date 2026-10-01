@@ -1,0 +1,26 @@
+{
+  "slug": "mekong-cafe",
+  "nom": "Le Mékong Café",
+  "signature": "Cuisine cambodgienne",
+  "adresse": "16 rue Myrtille Beer, 93400 Saint-Ouen-sur-Seine",
+  "horaires": "Du lundi au samedi, 11h30-14h30 et 19h-21h30 (22h30 vendredi et samedi)",
+  "googlePlaceId": "ChIJEbhBVB5v5kcRIh-s7z5FRH4",
+  "whatsapp": null,
+  "liens": [
+    {
+      "texte": "Voir la carte",
+      "url": "https://www.lemekong.fr/notre-cartes/"
+    }
+  ],
+  "theme": {
+    "fond": "#f8f1e7",
+    "texte": "#291c14",
+    "principal": "#a8692f",
+    "secondaire": "#d38e4d",
+    "police": "crimson-pro"
+  },
+  "images": {
+    "bandeau": "logo.png"
+  },
+  "goatcounter": null
+}

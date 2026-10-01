@@ -1,0 +1,27 @@
+{
+  "slug": "napolitano",
+  "nom": "Napolitano",
+  "signature": "Restaurant italien",
+  "adresse": "10 place du Capitaine Glarner, 93400 Saint-Ouen-sur-Seine",
+  "horaires": "Du lundi au samedi 11h-15h et 18h-23h, dimanche 18h-23h",
+  "googlePlaceId": "ChIJLehtncFv5kcRRUEGzMT9qeU",
+  "whatsapp": null,
+  "liens": [
+    {
+      "texte": "Réserver une table",
+      "url": "https://napolitano-saint-ouen-sur-seine.fr/fr/booking"
+    },
+    {
+      "texte": "Instagram",
+      "url": "https://www.instagram.com/sasnapolitano/"
+    }
+  ],
+  "theme": {
+    "fond": "#fbf7f0",
+    "texte": "#2b2b2b",
+    "principal": "#b3261e",
+    "secondaire": "#3e6b3a",
+    "police": "crimson-pro"
+  },
+  "goatcounter": null
+}

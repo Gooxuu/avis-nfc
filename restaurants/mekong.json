@@ -1,0 +1,26 @@
+{
+  "slug": "mekong",
+  "nom": "Le Mékong",
+  "signature": "Cuisine cambodgienne depuis 1988",
+  "adresse": "2 rue Édouard Vaillant, 93400 Saint-Ouen-sur-Seine",
+  "horaires": "Midi tous les jours 11h30-14h30, soir du mardi au dimanche 19h-21h30 (22h30 vendredi et samedi)",
+  "googlePlaceId": "ChIJnR-Sdfxu5kcR_-U0ThMDlQo",
+  "whatsapp": null,
+  "liens": [
+    {
+      "texte": "Voir la carte",
+      "url": "https://www.lemekong.fr/notre-cartes/"
+    }
+  ],
+  "theme": {
+    "fond": "#f8f1e7",
+    "texte": "#291c14",
+    "principal": "#a8692f",
+    "secondaire": "#d38e4d",
+    "police": "crimson-pro"
+  },
+  "images": {
+    "bandeau": "logo.png"
+  },
+  "goatcounter": null
+}

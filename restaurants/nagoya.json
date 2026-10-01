@@ -1,0 +1,26 @@
+{
+  "slug": "nagoya",
+  "nom": "Nagoya",
+  "signature": "Restaurant japonais",
+  "adresse": "79 bis avenue Gabriel Péri, 93400 Saint-Ouen-sur-Seine",
+  "googlePlaceId": "ChIJbb2MYftu5kcRO_SOS31oO_M",
+  "whatsapp": null,
+  "liens": [
+    {
+      "texte": "Commander",
+      "url": "https://ecommande.fr/frontend/NAGOYA93400/pc_menu_accueil.php"
+    },
+    {
+      "texte": "Réserver",
+      "url": "https://ecommande.fr/frontend/NAGOYA93400/reservation.php?lang=fr"
+    }
+  ],
+  "theme": {
+    "fond": "#f7f5f2",
+    "texte": "#1a1a1a",
+    "principal": "#1a1a1a",
+    "secondaire": "#b8322a",
+    "police": "poppins"
+  },
+  "goatcounter": null
+}
