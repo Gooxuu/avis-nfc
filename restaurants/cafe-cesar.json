@@ -1,0 +1,17 @@
+{
+  "slug": "cafe-cesar",
+  "nom": "Café César",
+  "signature": "Bistronomique · Clichy",
+  "adresse": "30 rue Chance-Milly, 92110 Clichy",
+  "horaires": "Lundi au mercredi 9h-16h, jeudi et vendredi 9h-minuit, samedi 11h-23h45",
+  "googlePlaceId": "ChIJ65ETdMdv5kcRAHUfF0wmNIw",
+  "whatsapp": null,
+  "email": "directioncafecesar@gmail.com",
+  "liens": [
+    { "texte": "Réserver une table", "url": "https://bookings.zenchef.com/results?rid=362721" },
+    { "texte": "Menus et infos", "url": "https://www.cafecesar.fr/" },
+    { "texte": "Instagram", "url": "https://www.instagram.com/cafecesar_clichy/" }
+  ],
+  "theme": { "fond": "#f6f6fa", "texte": "#191d25", "principal": "#2e337a", "secondaire": "#2e337a", "police": "yeseva-one" },
+  "goatcounter": null
+}

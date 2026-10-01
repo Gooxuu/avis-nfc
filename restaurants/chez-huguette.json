@@ -1,0 +1,17 @@
+{
+  "slug": "chez-huguette",
+  "nom": "Chez Huguette",
+  "signature": "Brasserie familiale",
+  "adresse": "1 rue des Rosiers, 93400 Saint-Ouen-sur-Seine",
+  "horaires": "Cuisine ouverte de 12h à 14h et de 19h à 22h, sans réservation",
+  "googlePlaceId": "ChIJy6WPVGJv5kcR6PrxNwvIzGo",
+  "whatsapp": null,
+  "email": "chezhuguette93@gmail.com",
+  "liens": [
+    { "texte": "Voir la carte", "url": "https://chez-huguette.fr/#carte" },
+    { "texte": "Instagram", "url": "https://www.instagram.com/chezhuguette_brasserie/" }
+  ],
+  "theme": { "fond": "#fffaf5", "texte": "#1a1a1a", "principal": "#e52b08", "secondaire": "#e52b08", "police": "montserrat" },
+  "images": { "bandeau": "logo.png" },
+  "goatcounter": null
+}

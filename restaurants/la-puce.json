@@ -1,0 +1,17 @@
+{
+  "slug": "la-puce",
+  "nom": "La Puce",
+  "signature": "Restaurant gastronomique",
+  "adresse": "17 rue Ernest Renan, 93400 Saint-Ouen-sur-Seine",
+  "horaires": "Du mardi au vendredi 12h-14h et 19h30-22h, samedi 19h30-22h",
+  "googlePlaceId": "ChIJu2PngeRu5kcRADWR8S06it8",
+  "whatsapp": null,
+  "liens": [
+    { "texte": "Réserver une table", "url": "https://bookings.zenchef.com/results?rid=376885" },
+    { "texte": "Voir la carte", "url": "https://la-puce-restaurant.com/#carte" },
+    { "texte": "Instagram", "url": "https://www.instagram.com/lapucerestaurant/" }
+  ],
+  "theme": { "fond": "#fffaf5", "texte": "#333333", "principal": "#e26425", "secondaire": "#e26425", "police": "oswald" },
+  "images": { "bandeau": "logo.webp" },
+  "goatcounter": null
+}
