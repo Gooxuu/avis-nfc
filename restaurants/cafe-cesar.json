@@ -12,6 +12,6 @@
     { "texte": "Menus et infos", "url": "https://www.cafecesar.fr/" },
     { "texte": "Instagram", "url": "https://www.instagram.com/cafecesar_clichy/" }
   ],
-  "theme": { "fond": "#f6f6fa", "texte": "#191d25", "principal": "#2e337a", "secondaire": "#2e337a", "police": "yeseva-one" },
+  "theme": { "fond": "#f7f3ec", "texte": "#1f2a44", "principal": "#1f2a44", "secondaire": "#b08d57", "police": "yeseva-one" },
   "goatcounter": null
 }

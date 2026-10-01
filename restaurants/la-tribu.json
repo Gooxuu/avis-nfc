@@ -10,6 +10,6 @@
     { "texte": "Réserver une table", "url": "https://bookings.zenchef.com/results?rid=360164" },
     { "texte": "Instagram", "url": "https://www.instagram.com/latribu.clichy/" }
   ],
-  "theme": { "fond": "#f8d917", "texte": "#191d25", "principal": "#191d25", "secondaire": "#191d25", "police": "yeseva-one" },
+  "theme": { "fond": "#f7f4ee", "texte": "#1c1c1c", "principal": "#1c1c1c", "secondaire": "#e2b714", "police": "yeseva-one" },
   "goatcounter": null
 }
