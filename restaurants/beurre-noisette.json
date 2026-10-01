@@ -1,0 +1,17 @@
+{
+  "slug": "beurre-noisette",
+  "nom": "Le Beurre Noisette",
+  "signature": "Restaurant",
+  "adresse": "68 rue Vasco de Gama, 75015 Paris",
+  "horaires": "Du mardi au vendredi 12h-13h45 et 19h-21h45, samedi 19h-21h45",
+  "googlePlaceId": "ChIJ35ar7nJw5kcRR2-Jh-Zj4Bs",
+  "whatsapp": null,
+  "email": "restaurantlebeurrenoisette@orange.fr",
+  "liens": [
+    { "texte": "Voir le menu", "url": "https://www.restaurantbeurrenoisette.com/menu-carte" },
+    { "texte": "Instagram", "url": "https://www.instagram.com/beurrenoisetteparis/" }
+  ],
+  "theme": { "fond": "#fffdf7", "texte": "#3d3d3f", "principal": "#3d3d3f", "secondaire": "#a89f8a", "police": "montserrat" },
+  "images": { "bandeau": "logo.png" },
+  "goatcounter": null
+}

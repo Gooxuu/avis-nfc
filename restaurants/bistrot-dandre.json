@@ -1,0 +1,15 @@
+{
+  "slug": "bistrot-dandre",
+  "nom": "Le Bistrot d'André",
+  "signature": "Maison chevronnée depuis 1918",
+  "adresse": "232 rue Saint-Charles, 75015 Paris",
+  "horaires": "Du lundi au vendredi, 12h-14h30 et 19h-22h",
+  "googlePlaceId": "ChIJoQBaNHVw5kcR6Ra0qsowZNM",
+  "whatsapp": null,
+  "liens": [
+    { "texte": "Carte du jour et réservation", "url": "https://lebistrotdandre.fr/" }
+  ],
+  "theme": { "fond": "#f1e6de", "texte": "#111111", "principal": "#111111", "secondaire": "#111111", "police": "cinzel" },
+  "images": { "bandeau": "logo.svg" },
+  "goatcounter": null
+}

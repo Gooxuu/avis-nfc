@@ -1,0 +1,17 @@
+{
+  "slug": "le-marche",
+  "nom": "Le Marché",
+  "signature": "Café restaurant",
+  "adresse": "238 rue de la Convention, 75015 Paris",
+  "horaires": "Tous les jours, 7h30-minuit",
+  "googlePlaceId": "ChIJCRqxYUBw5kcRpMq1NDXpluE",
+  "whatsapp": null,
+  "liens": [
+    { "texte": "Réserver une table", "url": "https://www.caferestaurant-lemarche.fr/reservation/" },
+    { "texte": "Voir le menu", "url": "https://www.caferestaurant-lemarche.fr/menu/" },
+    { "texte": "Instagram", "url": "https://www.instagram.com/lemarchecaferestaurant/" }
+  ],
+  "theme": { "fond": "#fdf6f4", "texte": "#141b38", "principal": "#e50252", "secondaire": "#e50252", "police": "poppins" },
+  "images": { "bandeau": "logo.png" },
+  "goatcounter": null
+}

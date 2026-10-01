@@ -1,0 +1,17 @@
+{
+  "slug": "largument",
+  "nom": "L'Argument",
+  "signature": "Chez vous, chez nous",
+  "adresse": "121 rue de la Convention, 75015 Paris",
+  "horaires": "Tous les jours, 7h-1h",
+  "googlePlaceId": "ChIJtxL6RRJw5kcRHywELJ1Ry7M",
+  "whatsapp": null,
+  "email": "largument7@hotmail.com",
+  "liens": [
+    { "texte": "Réserver une table", "url": "https://widget.thefork.com/fr/a90f7824-f202-4429-8263-c37f26ce2a24" },
+    { "texte": "Instagram", "url": "https://www.instagram.com/argumentparis15/" }
+  ],
+  "theme": { "fond": "#faf6ec", "texte": "#2b2b2b", "principal": "#c45824", "secondaire": "#4c634c", "police": "crimson-pro" },
+  "images": { "bandeau": "logo.png" },
+  "goatcounter": null
+}
